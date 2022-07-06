@@ -17,6 +17,7 @@ This is library in under development!
 :maxdepth: 2
 
 usage
+notebooks/mytutorial
 ```
 
 # Indices and tables

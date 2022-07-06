@@ -12,5 +12,6 @@ doc = [
     "sphinx~=4.2.0",
     "myst-parser==0.15.2",
     "furo",
+    "nbsphinx",
     "sphinx-autobuild",
 ]
