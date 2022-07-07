@@ -8,3 +8,13 @@
 ```
 
 세부내용은 Check out {doc}`usage` 문서 참고하세요
+
+```{eval-rst}
+.. function:: lumach.get_random_ingredients(kind=None)
+   
+	Return a list of random ingredients
+	:param kind: Optional “kind” arguments
+	:type kind: list[str] or None
+	:returns: The ingredients list
+	:rtype: list[str]
+```
