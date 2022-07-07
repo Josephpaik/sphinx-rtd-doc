@@ -7,14 +7,11 @@
 (.venv)$ pip install lumache 
 ```
 
+## 문서 참조를 위한 링크 만들기
 세부내용은 Check out {doc}`usage` 문서 참고하세요
 
+## 기능 문서화 방법 2 - .rst 문서를 소스코드 코멘트에서 가져오는 방법
 ```{eval-rst}
-.. function:: lumach.get_random_ingredients(kind=None)
-   
-	Return a list of random ingredients
-	:param kind: Optional “kind” arguments
-	:type kind: list[str] or None
-	:returns: The ingredients list
-	:rtype: list[str]
+.. autofunction:: lumache.get_random_ingredients(kind=None)
 ```
+
