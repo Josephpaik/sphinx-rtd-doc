@@ -22,3 +22,8 @@
 .. autofunction:: lumache.get_random_ingredients(kind=None)
 ```
 
+Some times, an error will be raised:
+
+```{eval-rst}
+.. autoexception:: lumache.InvalidKindError
+```
