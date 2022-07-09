@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'RTD-Tutorial2'
+project = 'Tech.Writer'
 copyright = '2022, joseph paik'
 author = 'joseph paik'
 
 # The full version, including alpha/beta/rc tags
-release = '"0.2"'
+release = '"0.1a"'
 
 
 # -- General configuration ---------------------------------------------------
