@@ -1,14 +1,14 @@
-# 달팽이 라이브러리 사용법
+# 달팽이 라이브러리 사용자 가이드
 
-## 설치가이드
+## 라이브러리 설치
 
 달팽이 라이브러리를 설치하는 방법:
 ```console
-(.venv)$ pip install lumache 
+(.venv)$pip install lumache 
 ```
-
-## 문서 참조를 위한 링크 만들기
-세부내용은 Check out {doc}`usage` 문서 참고하세요
+```{note}주의!
+위의 설치방법은 문서화를 위한 예시일뿐 실제 동작하지 않는다.
+```
 
 
 ## 기능 문서화 방법
@@ -27,3 +27,6 @@ Some times, an error will be raised:
 ```{eval-rst}
 .. autoexception:: lumache.InvalidKindError
 ```
+
+## 문서 참조를 위한 링크 만들기
+세부내용은 Check out {doc}`tutorial` 문서 참고하세요
