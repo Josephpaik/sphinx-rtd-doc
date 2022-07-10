@@ -1,4 +1,4 @@
-# 루마체(Lumache) 소개
+## 루마체(Lumache) 소개
 
 ![Lumache logo](lumache-logo.png)
 
