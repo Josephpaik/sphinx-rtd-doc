@@ -2,7 +2,7 @@
 Lumache - Python library for cooks and food lovers.
 """
 
-__version__ = "0.2.1"
+__version__ = "0.1.0"
 
 
 class InvalidKindError(Exception):
@@ -13,8 +13,6 @@ class InvalidKindError(Exception):
 def get_random_ingredients(kind=None):
     """
     Return a list of random ingredients as strings.
-    
-    소스코드의 코멘트가 변경되면 자동으로 반영된다.
 
     :param kind: Optional "kind" of ingredients.
     :type kind: list[str] or None
