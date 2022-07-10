@@ -14,6 +14,8 @@ def get_random_ingredients(kind=None):
     """
     Return a list of random ingredients as strings.
 
+    소스코드의 코멘트가 변경되면 자동으로 반영된다
+
     :param kind: Optional "kind" of ingredients.
     :type kind: list[str] or None
     :raise lumache.InvalidKindError: If the kind is invalid.
