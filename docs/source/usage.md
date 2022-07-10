@@ -6,7 +6,9 @@
 ```console
 (.venv)$pip install lumache 
 ```
-```{note}주의!
+
+```{note}
+주의!
 위의 설치방법은 문서화를 위한 예시일뿐 실제 동작하지 않는다.
 ```
 
