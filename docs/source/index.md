@@ -9,7 +9,8 @@
 :relative-images:
 ```
 
-```{warning}경고
+```{warning}
+경고!
 루마체는 심하게 개발중인(under heavy development) 라이브러리입니다
 ```
 
