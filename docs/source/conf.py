@@ -22,7 +22,7 @@ copyright = '2022, joseph paik'
 author = 'joseph paik'
 
 # The full version, including alpha/beta/rc tags
-release = '"0.1a"'
+release = '"0.1.1"'
 
 
 # -- General configuration ---------------------------------------------------
