@@ -27,3 +27,5 @@ usage
 - {ref}`genindex`
 - {ref}`modindex`
 - {ref}`search`
+
+(c) 2022 somansa co.,ltd. all right reserved
