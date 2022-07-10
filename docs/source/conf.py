@@ -35,7 +35,7 @@ extensions = [
     "sphinx.ext.duration",
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
-    "sphinx.ext.intersphinx",
+    # "sphinx.ext.intersphinx",
     "nbsphinx", # MyST-NB
     
 ]
