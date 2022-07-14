@@ -37,7 +37,6 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "nbsphinx", # MyST-NB
-    
 ]
 
 # 
