@@ -1,27 +1,27 @@
 ---
 substitutions:
   image01: |-
-    ```{image} _static/image01.png
+    ```{image} ./_static/image01.png
     :height: 1.87514in
     :width: 3.97917in
     ```
   image02: |-
-    ```{image} _static/image02.png
+    ```{image} ./_static/image02.png
     :height: 0.20833in
     :width: 0.45278in
     ```
   image03: |-
-    ```{image} _static/image03.png
+    ```{image} ./_static/image03.png
     :height: 0.20833in
     :width: 0.49514in
     ```
   image04: |-
-    ```{image} _static/image04.png
+    ```{image} ./_static/image04.png
     :height: 1.16389in
     :width: 6.77222in
     ```
   image05: |-
-    ```{image} _static/image05.png
+    ```{image} ./_static/image05.png
     :height: 0.96736in
     :width: 6.77222in
     ```
@@ -29,13 +29,13 @@ substitutions:
 
 # **QUICK GUIDE Contents**
 
-## Q1. 사용자가 특정 PostgreSQL DB로 접근하는 것을 차단하고 싶습니다.
-## Q2. 사용자가 PostgreSQL DB 내 ‘vip_info’ 테이블 접근 시 차단하고 싶습니다.
-## Q3. 사용자가 PostgreSQL DB 내 ‘social number’ 컬럼에 접근 시 차단하고 싶습니다.
-## Q4. 주민등록번호 10건 이상 조회 시 차단하고 싶습니다.
-## Q5. 지난달(ex. 2020.02.01~2020.02.29) 동안 주민등록번호 10건 이상조회된 **쿼리**와 **쿼리결과값을 조회하고 싶습니다.**
-## Q6. 지난달(ex. 2020.02.01~2020.02.29) 동안 (쿼리 수, 매칭된 패턴 수를 기준으로) **주민등록번호를 가장 많이 조회한 사용자**를 리포팅하고 싶습니다.  
-
+### Q1. 사용자가 특정 PostgreSQL DB로 접근하는 것을 차단하고 싶습니다.
+### Q2. 사용자가 PostgreSQL DB 내 ‘vip_info’ 테이블 접근 시 차단하고 싶습니다.
+### Q3. 사용자가 PostgreSQL DB 내 ‘social number’ 컬럼에 접근 시 차단하고 싶습니다.
+### Q4. 주민등록번호 10건 이상 조회 시 차단하고 싶습니다.
+### Q5. 지난달(ex. 2020.02.01~2020.02.29) 동안 주민등록번호 10건 이상조회된 **쿼리**와 **쿼리결과값을 조회하고 싶습니다.**
+##3 Q6. 지난달(ex. 2020.02.01~2020.02.29) 동안 (쿼리 수, 매칭된 패턴 수를 기준으로) **주민등록번호를 가장 많이 조회한 사용자**를 리포팅하고 싶습니다.  
+  
 ### 1. **REPORTS > Database > 사용자 순위**를 클릭합니다.  
 
 {{ image01 }}
