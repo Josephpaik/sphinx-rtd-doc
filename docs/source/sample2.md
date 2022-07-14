@@ -1,18 +1,5 @@
----
-substitutions:
-  image01: |-
 
-  image02: |-
-   
-  image03: |-
-    
-  image04: |-
-    
-  image05: |-
-    
----
-
-# **QUICK GUIDE Contents**
+# QUICK GUIDE Contents
 
 ### Q1. 사용자가 특정 PostgreSQL DB로 접근하는 것을 차단하고 싶습니다.
 ### Q2. 사용자가 PostgreSQL DB 내 ‘vip_info’ 테이블 접근 시 차단하고 싶습니다.
