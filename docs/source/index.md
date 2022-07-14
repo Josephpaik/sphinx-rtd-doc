@@ -20,6 +20,7 @@
 
 notebooks/mytutorial
 usage
+sample2
 ```
 
 # 색인과 모듈(TBD)
