@@ -12,10 +12,9 @@
 - - -
 
 #### 1. **REPORTS > Database > 사용자 순위**를 클릭합니다.  
+<img src="_static/image01.png" height="250px">
 
-![image01](_static/image01.png)
-
-#### 2. 사용자 순위 필터에서 ![image02](_static/image02.png) 버튼을 클릭하고 아래 **패턴 이름**과 **순위 선정 기준**을 선택한 후 ![image03](_static/image03.png)을 클릭합니다.  
+#### 2. 사용자 순위 필터에서 <img src="_static/image02.png" align="center" height="20px"> 버튼을 클릭하고 아래 **패턴 이름**과 **순위 선정 기준**을 선택한 후 <img src="_static/image03.png" align="center" height="20px">을 클릭합니다.  
 (\* 아래 이미지는 ‘패턴 개수’를 순위 선정 기준으로 선택한 경우입니다.)  
 
 - **패턴 이름** : **주민 등록 번호**  
@@ -23,11 +22,11 @@
 ① 쿼리 수 기준 → **SQL 개수** 선택  
 ② 매칭된 패턴 수 기준 → **패턴 개수** 선택  
 
-![image4](_static/image04.png)
+<img src="_static/image04.png" height="180px">
   
 #### 3. 다음은 (매칭된 패턴 수를 기준으로) 주민등록번호를 가장 많이 조회한 사용자에 대한 검색결과입니다.
 
-![image5](_static/image05.png)
+<img src="_static/image05.png" height="150px">
   
 
 | 메 뉴  | 서브 메뉴1 | 기 능  |
