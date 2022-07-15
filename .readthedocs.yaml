@@ -16,3 +16,6 @@ python:
     extra_requirements:
       - doc
 
+# formats:
+#  - pdf
+#  - epub
