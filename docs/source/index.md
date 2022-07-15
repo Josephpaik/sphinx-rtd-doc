@@ -20,15 +20,7 @@
 
 notebooks/mytutorial
 usage
-<<<<<<< HEAD
-<<<<<<< HEAD
-sample
-=======
 sample2
->>>>>>> c4ce794d52eb3b4275274a224a4b07d400aa3b34
-=======
-sample2
->>>>>>> e771048a013f20de8788cb75841f918fd8114794
 ```
 
 # 색인과 모듈(TBD)
