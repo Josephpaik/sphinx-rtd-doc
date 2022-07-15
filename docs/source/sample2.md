@@ -12,7 +12,7 @@
 - - -
 
 #### 1. **REPORTS > Database > 사용자 순위**를 클릭합니다.  
-<img src="_static/image01.png" height="250px">
+<img src="_static/image01.png" height="200px">
 
 #### 2. 사용자 순위 필터에서 <img src="_static/image02.png" align="center" height="20px"> 버튼을 클릭하고 아래 **패턴 이름**과 **순위 선정 기준**을 선택한 후 <img src="_static/image03.png" align="center" height="20px">을 클릭합니다.  
 (\* 아래 이미지는 ‘패턴 개수’를 순위 선정 기준으로 선택한 경우입니다.)  
