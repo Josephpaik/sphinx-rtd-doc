@@ -3,4 +3,8 @@
 .doctree
 .pickle
 .pyc
+<<<<<<< HEAD
 docs/build
+=======
+docs/build/html
+>>>>>>> 0c5c1f5a4a44cc88ca51b3c782a9440115d1d015
