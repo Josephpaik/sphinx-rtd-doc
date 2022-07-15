@@ -22,7 +22,7 @@ copyright = '2022, joseph paik'
 author = 'joseph paik'
 
 # The full version, including alpha/beta/rc tags
-release = '"0.2.1"'
+release = '"0.2.2"'
 
 
 # -- General configuration ---------------------------------------------------
@@ -37,7 +37,6 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "nbsphinx", # MyST-NB
-    
 ]
 
 # 
