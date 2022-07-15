@@ -21,6 +21,7 @@
 notebooks/mytutorial
 usage
 sample2
+value_proposition_design
 ```
 
 # 색인과 모듈(TBD)
