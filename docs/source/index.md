@@ -24,10 +24,5 @@ sample2
 value_proposition_design
 ```
 
-# 문서색인, 모듈색인(TBD)
-
-- {ref}`genindex`
-- {ref}`modindex`
-- {ref}`search`
 
 (c) 2022 somansa co.,ltd. all right reserved
