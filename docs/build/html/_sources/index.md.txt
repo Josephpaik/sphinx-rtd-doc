@@ -21,12 +21,8 @@
 notebooks/mytutorial
 usage
 sample2
+value_proposition_design
 ```
 
-# 색인과 모듈(TBD)
-
-- {ref}`genindex`
-- {ref}`modindex`
-- {ref}`search`
 
 (c) 2022 somansa co.,ltd. all right reserved

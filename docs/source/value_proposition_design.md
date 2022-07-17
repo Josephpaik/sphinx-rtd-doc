@@ -1,15 +1,13 @@
 # 밸류 프로포지션 디자인
 ## 가치 제안 설계
-Value Proposition Design
-
-이 책을 보기 전에 비즈니스 모델의 탄생(비즈니스 모델 제너레이션)을 먼저 보고 비즈니스 모델 캔버스를 익히는 것이 올바른 순서이다.
+Value Proposition Design  
+이 책을 보기 전에 비즈니스 모델의 탄생(비즈니스 모델 제너레이션)을 먼저 보고 비즈니스 모델 캔버스를 익히는 것이 올바른 순서이다  
 
 ### 1.비즈니스 모델의 탄생
-
 비즈니스 모델을 구성하는 캔버스: 사업모델을 한 장으로 가시화하는 방법. 
 가치 제안과 고객 채널을 포함하고 있다
 
-사양한 업종의 Business Model Generation BMG 캔버스 모음집
+다양한 업종의 Business Model Generation BMG 캔버스 모음집
 
 ![20201230_1649_001](_static/_20201230_1649_001.png)
 
@@ -91,12 +89,10 @@ Value Proposition Design
 
 [Strategyzer | Log in](https://platform.strategyzer.com/training)
 
-가치 제안 설계의 핵심은 고객이 원하는 가치를 제안하기 위해
-다양한 조사 활동에 검증된 도구를 적용하고, 
+가치 제안 설계의 핵심은 고객이 원하는 가치를 제안하기 위해 다양한 조사 활동에 검증된 도구를 적용하고, 
 조사후에도 고객이 원하는 것과 가치 제안을 지속적으로 일치시키는 것이다.
 The heart of Value Proposition Design is 
-about applying Tools to the messy Search for value propositions that customers want 
-and then keeping them aligned with what customers want in Post search
+about applying Tools to the messy Search for value propositions that customers want and then keeping them aligned with what customers want in Post search
 
 **가치 제안 설계**는 고객이 원하는 것을 반복 조사하면서 훌륭한 
 가치 제안을 **디자인**하고 **테스트**하는데 
