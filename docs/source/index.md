@@ -24,7 +24,7 @@ sample2
 value_proposition_design
 ```
 
-# 색인과 모듈(TBD)
+# 문서색인, 모듈색인(TBD)
 
 - {ref}`genindex`
 - {ref}`modindex`
