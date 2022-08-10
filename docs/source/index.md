@@ -22,6 +22,7 @@ notebooks/mytutorial
 usage
 sample2
 value_proposition_design
+VDI tutorial-noPicture_220809.md
 ```
 
 # 색인과 모듈(TBD)
