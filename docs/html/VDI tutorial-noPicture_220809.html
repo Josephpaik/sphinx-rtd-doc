@@ -1,0 +1,445 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="밸류 프로포지션 디자인" href="value_proposition_design.html" />
+
+    <meta name="generator" content="sphinx-4.2.0, furo 2022.06.21"/>
+        <title>VDI 튜토리얼 - Tech.Writer &#34;0.2.4&#34; documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Tech.Writer "0.2.4" documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">Tech.Writer "0.2.4" documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">사용자 가이드:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/mytutorial.html">튜토리얼</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">달팽이 라이브러리 사용자 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sample2.html">QUICK GUIDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="value_proposition_design.html">밸류 프로포지션 디자인</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">VDI 튜토리얼</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section class="tex2jax_ignore mathjax_ignore" id="vdi">
+<h1>VDI 튜토리얼<a class="headerlink" href="#vdi" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>이 문서는 마크다운(.md)으로 작성한 문서의 양식, 문체 등을 테스트하기 위해 제작하였습니다. 특정 버전의 제품과 다른 부분을 포함할 수 있음을 알려드립니다</p>
+</div></blockquote>
+<section id="id1">
+<h2>이 튜토리얼의 목적<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>VDI 관리자로서 새로운 사용자를 위해 VD 생성을 위한 마스터 이미지를 만들고, 이 마스터 이미지를 기반으로 새로 인스턴스를 만들어 사용자에게 배포할 수 있습니다.</p>
+</section>
+<section id="id2">
+<h2>1단계: 마스터 이미지 설정하기<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<section id="vd-center">
+<h3>관리자 화면: VD Center<a class="headerlink" href="#vd-center" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p>관리자 화면의 <strong>VD Center</strong> 메뉴에서 <strong>관리</strong> &gt; <strong>마스터 이미지</strong>를 선택하여 <strong>홈 / 관리 / 마스터 이미지</strong> 경로에 있는 “<strong>마스터 이미지</strong>” 화면으로 이동합니다</p></li>
+<li><p>마스터 이미지 화면 왼쪽에 있는 <strong>+추가</strong> 버튼을 선택하여 <strong>마스터 이미지 추가</strong> 화면으로 이동합니다</p></li>
+<li><p><strong>마스터 이미지 추가</strong> 화면에서 <strong>이름, 설명, 원본, 크기</strong>를 입력하고 그 아래 <strong>저장</strong> 버튼을 누릅니다<br />
+각 항목에 대한 설명과 입력값 예시는 아래 표를 참고합니다</p></li>
+</ol>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>항 목</p></th>
+<th class="head"><p>설정값</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>이름</p></td>
+<td><p>마스터 이미지 이름을 지정합니다. 예: VD_Master_IMG_Example</p></td>
+</tr>
+<tr class="row-odd"><td><p>설명</p></td>
+<td><p>마스터 이미지에 대한 용도, 특징 등 간단한 설명을 추가합니다. 예: VD 마스터 이미지 신규등록 실습용</p></td>
+</tr>
+<tr class="row-even"><td><p>원본</p></td>
+<td><p>신규 이미지 구성에 필요한 기초설정을 가진 OS 이미지를 선택합니다. 예: ORIGIN-SNAP</p></td>
+</tr>
+<tr class="row-odd"><td><p>크기</p></td>
+<td><p>시스템 드라이브(C:)로 사용할 저장소 크기 를 지정합니다. 최소 크기는 80GB. 예: 84GB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<div><p><strong>마스터 이미지</strong> 목록에 ‘<strong>VD_Master_IMG_Example</strong>’이 표시되는지 확인합니다</p>
+</div></blockquote>
+</section>
+</section>
+<section id="vd">
+<h2><strong>2단계: 신규 VD그룹 등록</strong><a class="headerlink" href="#vd" title="Permalink to this headline">#</a></h2>
+<section id="vd-center-vd">
+<h3>VD Center: VD그룹<a class="headerlink" href="#vd-center-vd" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p>관리자 화면내 <strong>VD Center</strong> 메뉴에서 <strong>관리 &gt; VD 그룹</strong>을 선택하여 <strong>홈/관리/VD그룹</strong> 경로에 있는 <strong>VD 그룹</strong> 화면으로 이동합니다.</p></li>
+<li><p><strong>VD그룹</strong> 오른쪽 <strong>+ 추가</strong> 버튼을 선택하여 <strong>VD 그룹 추가</strong> 화면으로 이동합니다.</p></li>
+<li><p><strong>VD 그룹 추가</strong> 화면의 <strong>이름</strong> 항목에 ‘<strong>연구소 VD 그룹</strong>’을 입력하고, <strong>VD 수</strong> 에는 ‘<strong>5</strong>’, <strong>방식</strong> 란에 ‘<strong>전용</strong>’을 입력합니다. <strong>마스터 이미지/스냅샷</strong>에는 1단계에서 생성한 이미지를 ‘<strong>마스터 이미지</strong>’ 목록에서 찾아 선택 후 오른쪽 아래 <strong>선택</strong> 버튼을 누릅니다.
+계속해서 아래 목록을 참고하여 각 항목에 설정값을 입력합니다.</p></li>
+</ol>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>항 목</p></th>
+<th class="head"><p>설정값</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>이름</p></td>
+<td><p>VD그룹 이름을 입력합니다. 예: 연구소 VD 그룹</p></td>
+</tr>
+<tr class="row-odd"><td><p>설명</p></td>
+<td><p><em>설명은 선택사항입니다</em></p></td>
+</tr>
+<tr class="row-even"><td><p>VD 개수</p></td>
+<td><p>VD그룹에 생성할 VD 수량. 예: 10</p></td>
+</tr>
+<tr class="row-odd"><td><p>방식</p></td>
+<td><p>전용/랜덤풀/정적풀 예:전용</p></td>
+</tr>
+<tr class="row-even"><td><p>마스터 이미지</p></td>
+<td><p>마스터 이미지 선택. 예: ‘VD_Master_IMG_Example’</p></td>
+</tr>
+<tr class="row-odd"><td><p>vCPU</p></td>
+<td><p>가상 데스크탑(VD)의 CPU 개수 예: 4</p></td>
+</tr>
+<tr class="row-even"><td><p>RAM</p></td>
+<td><p>가상 데스크탑(VD)의 메모리(RAM) 용량. 예: 16 (GB)</p></td>
+</tr>
+<tr class="row-odd"><td><p>IP 대역</p></td>
+<td><p>VD가 사용할 IP주소를 대역 또는 CIDR형식으로 지정합니다. 예: 10.104.aaa.bbb ~ 10.104.ccc.ddd</p></td>
+</tr>
+<tr class="row-even"><td><p>컴퓨터 생성위치</p></td>
+<td><p>AD(Active Directory)에 생성하는 VD이름을 등록합니다 예: OU=연구소,DC=somansa,DC=COM</p></td>
+</tr>
+<tr class="row-odd"><td><p>컴퓨터 이름</p></td>
+<td><p>VD 그룹에 만들어지는 VD의 이름</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple">
+<li><p><strong>적용 대상 화면</strong>으로 이동합니다
+<strong>적용 대상 화면</strong>은 ‘<strong>전체 목록</strong>’과 ‘<strong>선택 목록</strong>’으로 나누어져 있습니다. ‘<strong>전체 목록</strong>’에서 ‘<strong>연구소</strong>’를 찾아 체크표시한 다음 <strong>’&gt;’</strong> 버튼을 눌러 ‘<strong>선택 목록</strong>’에 추가한다. 오른쪽 아래 ‘<strong>확인</strong>’을 누릅니다</p></li>
+<li><p>화면 아래 있는 ‘<strong>저장</strong>’ 버튼을 누릅니다</p></li>
+<li><p>관리자 화면내 <strong>VD Center</strong> 메뉴에서 <strong>관리 &gt; VD 그룹</strong>을 선택하여 <strong>홈/관리/VD그룹</strong> 으로 이동하여 지정한 ‘<strong>연구소VD그룹</strong>’이 ‘<strong>VD리스트</strong>’에 표시되는지 확인합니다</p></li>
+<li><p><strong>오른쪽</strong> <strong>VD리스트</strong>에 ‘연구소VD그룹의 VD 10개가 표시되는지 확인하고 표시되면 작업을 종료합니다</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>VD리스트에 정상적으로 표시 되지 않는 경우 이 문서의 지시사항과 다른 부분이 있는지 검토합니다</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="md">
+<h2>기타 .MD 작성에 자주 사용하는 문법<a class="headerlink" href="#md" title="Permalink to this headline">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>경고! 이 경고문을 따르지 않아 발생하는 모든 불이익은 당사자에게 귀속됩니다.</p>
+</div>
+<div class="admonition-this-is-my-admonition admonition">
+<p class="admonition-title">This is my admonition</p>
+<p>This is my note with admonition</p>
+</div>
+<section id="id3">
+<h3>개발 소스코드 하이라이트<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>파이썬 python</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">a</span> <span class="kn">import</span> <span class="n">b</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s2">&quot;string&quot;</span>
+</pre></div>
+</div>
+<p>타입스크립트 typescript</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">type</span><span class="w"> </span><span class="nx">MyBool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"></span>
+
+<span class="kd">interface</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h3>각주 사용법<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>이 부분은 번호를 지정한 각주 참조입니다.<a class="footnote-reference brackets" href="#id7" id="id5">3</a></p></li>
+<li><p>이 부분은 자동으로 번호매김한 각주 참조입니다.<a class="footnote-reference brackets" href="#myref" id="id6">1</a></p></li>
+</ul>
+<p>(c), (C)
+(tm), (TM)
+(r), (R)
+(p), (P)
++-
+…
+?….
+!….</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id5">3</a></span></dt>
+<dd><p>이 부분은 번호를 지정한 각주 참조입니다.</p>
+</dd>
+<dt class="label" id="myref"><span class="brackets"><a class="fn-backref" href="#id6">1</a></span></dt>
+<dd><p>이 부분은 자동으로 번호매김한 각주 참조입니다</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          <a class="prev-page" href="value_proposition_design.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">밸류 프로포지션 디자인</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, joseph paik
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">VDI 튜토리얼</a><ul>
+<li><a class="reference internal" href="#id1">이 튜토리얼의 목적</a></li>
+<li><a class="reference internal" href="#id2">1단계: 마스터 이미지 설정하기</a><ul>
+<li><a class="reference internal" href="#vd-center">관리자 화면: VD Center</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vd"><strong>2단계: 신규 VD그룹 등록</strong></a><ul>
+<li><a class="reference internal" href="#vd-center-vd">VD Center: VD그룹</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#md">기타 .MD 작성에 자주 사용하는 문법</a><ul>
+<li><a class="reference internal" href="#id3">개발 소스코드 하이라이트</a></li>
+<li><a class="reference internal" href="#id4">각주 사용법</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    </body>
+</html>
