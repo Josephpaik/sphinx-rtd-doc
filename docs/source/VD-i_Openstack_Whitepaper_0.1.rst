@@ -10,6 +10,10 @@
 
 **Confirm : 이상석 수석연구원**
 
+.. image:: media/image2.png
+      :width: 4.35833in
+      :height: 2.65in
+
 +-----------------------------------------------------------------------+
 | .. rubric:: **내용**                                                  |
 |    :name: 내용                                                        |
@@ -313,11 +317,6 @@
       1. .. rubric:: All-in-One
             :name: all-in-one
 
-..
-
-   .. image:: media/image2.png
-      :width: 4.35833in
-      :height: 2.65in
 
 Multi-Node
 ==========
