@@ -23,6 +23,7 @@ usage
 sample2
 value_proposition_design
 VDI tutorial-noPicture_220809.md
+VD-i_Openstack_Whitepaper_0.1.md
 ```
 
 # 색인과 모듈(TBD)
