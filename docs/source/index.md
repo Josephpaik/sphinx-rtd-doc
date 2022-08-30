@@ -1,32 +1,22 @@
-% Documentation master file, created by
-% sphinx-quickstart on Mon Jul  4 05:58:28 2022.
-% You can adapt this file completely to your liking, but it should at least
-% contain the root `toctree` directive.
+# VDI 기술문서
 
-# 안녕하세요 루마체Lumache입니다!
+it should at least contain the root `toctree` directive.
 
 ```{include} ../../README.md
 :relative-images:
 ```
 
-```{warning}
-경고!
-루마체는 심하게 개발중인(under heavy development) 라이브러리입니다
-```
-
 ```{toctree}
-:caption: '사용자 가이드:'
-:maxdepth: 2
+:caption: '가상 데스크탑 인프라 VDI 가이드:'
+:maxdepth: 3
 
-notebooks/mytutorial
-usage
-sample2
-value_proposition_design
-VDI tutorial-noPicture_220809.md
-VD-i_Openstack_Whitepaper_0.1.md
+
+마크다운-스타일-가이드
+OpenStack
+VDI_tutorial-noPicture_220809
 ```
 
-# 색인과 모듈(TBD)
+# 색인과 모듈
 
 - {ref}`genindex`
 - {ref}`modindex`
